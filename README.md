@@ -38,8 +38,8 @@ Feature I Add :
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/zougari47/calculator-app-main)
+- Live Site URL: [Live Demo](https://zougari47.github.io/calculator-app-main/index.html)
 
 ## My process
 
