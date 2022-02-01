@@ -1,0 +1,50 @@
+@import './abstracts/color';
+@import './abstracts/config';
+@import './abstracts/font';
+@import 'calc';
+@import 'header';
+
+html {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: $font-size;
+}
+
+body {
+  background: var(--body_background);
+  min-height: 100vh;
+  @include flexCenter;
+}
+
+.attribution {
+  position: fixed;
+  margin: auto;
+  bottom: 3vh;
+  color: var(--screen_text);
+  font-size: 0.8rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .frontend_mentor {
+    color: var(--toggle_btn_background);
+  }
+
+  .me {
+    color: var(--del_background);
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+  h5 {
+    display: none;
+  }
+}

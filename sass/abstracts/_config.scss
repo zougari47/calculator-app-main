@@ -1,0 +1,15 @@
+//reset default values
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+//center with flex
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
