@@ -156,7 +156,7 @@ function buttonClicked(e) {
   }
 
   //when click equal button
-  if (btnTxt === '=' || btnTxt === 'Enter') {
+  if (btnTxt === '=') {
     screen.textContent = calc(screen.textContent);
   }
 }
@@ -165,7 +165,8 @@ function calc(exp) {
   try {
     return eval(exp);
   } catch (e) {
-    return 'Math ERROR';
+    // return 'Math ERROR';
+    return e;
   }
 }
 
