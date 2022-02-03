@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,21 +10,21 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./src/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Calculator app</title>
+    <title>Calculator app</title>
   </head>
   <body>
-    <div class="calc">
+    <div class="calc" role="main">
       <header>
         <h1>calc</h1>
         <div class="themes">
-          <h5>THEME</h5>
+          <span class=".h5">THEME</span>
           <div class="toggle__themes">
             <input type="radio" name="_themes" id="theme1" />
             <label for="theme1"></label>
-            <input type="radio" name="_themes" id="theme2" checked />
+            <input type="radio" name="_themes" id="theme2" />
             <label for="theme2"></label>
             <input type="radio" name="_themes" id="theme3" />
             <label for="theme3"></label>
@@ -32,11 +32,11 @@
           </div>
         </div>
       </header>
-      <div class="result">
-        <div class="screen">0</div>
+      <div class="result" role="container_screen">
+        <div class="screen" role="alert">0</div>
       </div>
-      <div class="keyboard">
-        <div class="buttons">
+      <div class="keyboard" role="article">
+        <div class="buttons" role="menu">
           <button value="" class="numbers">7</button>
           <button value="" class="numbers">8</button>
           <button value="" class="numbers">9</button>
@@ -59,18 +59,23 @@
       </div>
     </div>
 
-    <div class="attribution">
+    <footer role="contentinfo" class="attribution">
       Challenge by
       <a
         class="frontend_mentor"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
+        role="button"
         >Frontend Mentor</a
       >. Coded by
-      <a class="me" href="https://github.com/zougari47" target="_blank"
+      <a
+        class="me"
+        href="https://github.com/zougari47"
+        target="_blank"
+        role="button"
         >Ahmed Zougari</a
       >.
-    </div>
+    </footer>
 
     <script src="./src/js/index.js"></script>
   </body>

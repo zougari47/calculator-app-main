@@ -14,11 +14,15 @@ body {
   background: var(--body_background);
   min-height: 100vh;
   @include flexCenter;
+  overflow: hidden;
 }
 
 .attribution {
+  text-align: center;
   position: fixed;
-  margin: auto;
+  width: 85vw;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 3vh;
   color: var(--screen_text);
   font-size: 0.8rem;
@@ -44,7 +48,16 @@ body {
   html {
     font-size: 14px;
   }
-  h5 {
-    display: none;
+  .calc {
+    width: 70vw;
+    height: 65vh;
+
+    .themes {
+      width: 20%;
+
+      span {
+        display: none;
+      }
+    }
   }
 }

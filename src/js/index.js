@@ -80,6 +80,11 @@ function changeTheme(id) {
 }
 
 function makeFavoriteTheme() {
+  //uncheck all radio button on load page
+  document
+    .querySelectorAll('input[type="radio"]')
+    .forEach((rd) => (rd.checked = false));
+
   //let the favorite theme when reload the page
   const favoriteTheme = localStorage.getItem('defaultTheme') || '';
   if (favoriteTheme.includes('theme')) {
@@ -122,6 +127,7 @@ function buttonClicked(e) {
 
     if (
       screen.textContent === 'Infinity' ||
+      screen.textContent === '-Infinity' ||
       screen.textContent === 'Math ERROR' ||
       screen.textContent === '0'
     ) {
@@ -141,6 +147,7 @@ function buttonClicked(e) {
   if (btnTxt === 'DEL' || btnTxt === 'Backspace') {
     screen.textContent =
       screen.textContent == 'Infinity' ||
+      screen.textContent == '-Infinity' ||
       screen.textContent == '0' ||
       screen.textContent == 'Math ERROR' ||
       screen.textContent.length === 1

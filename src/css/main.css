@@ -80,6 +80,7 @@
           justify-content: end;
   padding-right: 0.8rem;
   font-family: 'Spartan', sans-serif;
+  overflow-x: hidden;
 }
 
 .calc .keyboard {
@@ -188,9 +189,11 @@ header .themes {
   margin-right: 0;
 }
 
-header .themes h5 {
+header .themes span {
+  font-size: 0.8rem;
   color: var(--screen_text);
   font-family: 'Spartan', sans-serif;
+  display: block;
 }
 
 header .themes .toggle__themes {
@@ -274,11 +277,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .attribution {
+  text-align: center;
   position: fixed;
-  margin: auto;
+  width: 85vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 3vh;
   color: var(--screen_text);
   font-size: 0.8rem;
@@ -304,7 +312,14 @@ body {
   html {
     font-size: 14px;
   }
-  h5 {
+  .calc {
+    width: 70vw;
+    height: 65vh;
+  }
+  .calc .themes {
+    width: 20%;
+  }
+  .calc .themes span {
     display: none;
   }
 }

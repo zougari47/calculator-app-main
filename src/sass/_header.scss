@@ -16,9 +16,11 @@ header {
     justify-content: flex-end;
     margin-right: 0;
 
-    h5 {
+    span {
+      font-size: 0.8rem;
       color: var(--screen_text);
       font-family: 'Spartan', sans-serif;
+      display: block;
     }
 
     .toggle__themes {
