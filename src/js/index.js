@@ -165,8 +165,7 @@ function calc(exp) {
   try {
     return eval(exp);
   } catch (e) {
-    // return 'Math ERROR';
-    return e;
+    return 'Math ERROR';
   }
 }
 
